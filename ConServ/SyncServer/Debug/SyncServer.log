@@ -1,5 +1,9 @@
 ﻿  dllmain.cpp
+D:\University\6th Sem\РИС\ConServ\SyncServer\SyncServer.h(28,17): warning C4307: "*": переполнение целой константы со знаком
+D:\University\6th Sem\РИС\ConServ\SyncServer\SyncServer.h(46,20): warning C4309: =: усечение константного значения
+D:\University\6th Sem\РИС\ConServ\SyncServer\SyncServer.h(110,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\University\6th Sem\РИС\ConServ\SyncServer\SyncServer.h(32,10): warning C4101: wsaData: неиспользованная локальная переменная
   pch.cpp
   Создание кода...
-     Создается библиотека D:\Downloads\ConServ\Debug\SyncServer.lib и объект D:\Downloads\ConServ\Debug\SyncServer.exp
-  SyncServer.vcxproj -> D:\Downloads\ConServ\Debug\SyncServer.dll
+     Создается библиотека D:\University\6th Sem\РИС\ConServ\Debug\SyncServer.lib и объект D:\University\6th Sem\РИС\ConServ\Debug\SyncServer.exp
+  SyncServer.vcxproj -> D:\University\6th Sem\РИС\ConServ\Debug\SyncServer.dll

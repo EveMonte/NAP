@@ -1,6 +1,6 @@
 ﻿  pch.cpp
   dllmain.cpp
-D:\Downloads\ConServ\EchoServer\Global.h(14,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
-D:\Downloads\ConServ\EchoServer\pch.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
-     Создается библиотека D:\Downloads\ConServ\Debug\EchoServer.lib и объект D:\Downloads\ConServ\Debug\EchoServer.exp
-  EchoServer.vcxproj -> D:\Downloads\ConServ\Debug\EchoServer.dll
+D:\University\6th Sem\РИС\ConServ\EchoServer\Global.h(14,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+D:\University\6th Sem\РИС\ConServ\EchoServer\pch.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+     Создается библиотека D:\University\6th Sem\РИС\ConServ\Debug\EchoServer.lib и объект D:\University\6th Sem\РИС\ConServ\Debug\EchoServer.exp
+  EchoServer.vcxproj -> D:\University\6th Sem\РИС\ConServ\Debug\EchoServer.dll

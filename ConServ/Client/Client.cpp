@@ -135,7 +135,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	int curValue = 0;
 	//syncServ->curvalue = 0;
 	//strcpy(syncServ->cmd, "Sync");
-	clock_t Tc = 3000;
+	clock_t Tc = 10000;
 	sync->curvalue = 0;
 	int counter = 0;
 	strcpy(sync->cmd, "Sync");
@@ -155,6 +155,8 @@ int _tmain(int argc, _TCHAR* argv[])
 		int max = 100, lobuf = 1;
 		char obuf[150] = "";
 		char ibuf[150] = "";
+		char iib[50];
+
 		int bport = 2000;
 
 		char Call[50]; //запрос клиента
@@ -259,8 +261,18 @@ int _tmain(int argc, _TCHAR* argv[])
 			break;
 		case 4:
 			strcpy(Call, "Sync");
-			cout << "Введите Sync для продолжения. Введите любое другое сочетание символов, чтобы выйти:" << endl;
+			cout << "Do you want to use NTP? [Y/n]\n";
+			char choice;
+			cin >> choice;
+			if (choice == 'n') {
+				cout << "Enter Tc: " << endl;
+				cin >> Tc;
+				strcpy(iib, "nontp");
+			}
+			else {
+				strcpy(iib, "ntp");
 
+			}
 			break;
 		default:
 			strcpy(Call, "Echo");
@@ -290,12 +302,12 @@ int _tmain(int argc, _TCHAR* argv[])
 			strcpy(tempBuf, "Sync");
 			if (strcmp(rCall, tempBuf) == 0) {
 				isSync = true;
-				cout << "Enter Tc: " << endl;
-				cin >> Tc;
 
 			}
 
-			char iib[50];
+			if ((lobuf = send(ClientSocket, iib, sizeof(iib), NULL)) == SOCKET_ERROR)
+				throw SetErrorMsgText("Send:", WSAGetLastError());
+
 			while (counter < 10)
 			{
 				time_t startTime = clock();
@@ -305,10 +317,10 @@ int _tmain(int argc, _TCHAR* argv[])
 					time_t finishTime = clock();
 					if ((finishTime - startTime) / CLOCKS_PER_SEC < 20) {
 						if (isSync) {
-
 							Sleep(Tc);
 							sync->curvalue += Tc + curValue;
 							itoa(sync->curvalue, iib, 10);
+
 						}
 						else {
 							std::cout << "   ";
@@ -331,9 +343,6 @@ int _tmain(int argc, _TCHAR* argv[])
 					rcv = false;
 				}
 				// Принимаем сообщение
-				if (isSync) {
-					strcpy(obuf, (char*)&sync);
-				}
 				if ((recv(ClientSocket, obuf, sizeof(obuf), NULL)) == SOCKET_ERROR)
 				{
 					switch (WSAGetLastError())
@@ -354,7 +363,7 @@ int _tmain(int argc, _TCHAR* argv[])
 						printf("Полученное сообщение:[%s]\n", obuf);
 					if (isSync) {
 						sync->curvalue += atoi(obuf);
-						cout << "Tc: " << Tc << "\tcurvalue " << sync->curvalue << "\tcorrection " << obuf << "\tcounter " << counter << "\tOh\t" << syncServ->cmd << endl;
+						cout << "Tc: " << Tc << "\tcurvalue " << sync->curvalue << "\tcorrection " << obuf << "\t#" << counter << endl;
 						counter++;
 
 					}

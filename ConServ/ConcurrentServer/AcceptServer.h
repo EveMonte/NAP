@@ -104,8 +104,6 @@ DWORD WINAPI AcceptServer (LPVOID pPrm)
 		if (listen(ServerSocket,SOMAXCONN)== SOCKET_ERROR)  
 			throw  SetErrorMsgText("Listen:",WSAGetLastError());
 
-		cout << "AcceptServer file" << endl;
-
 		// Переводим сокет в неблокирующий режим
 		//accept не приостан.вып-ние потока, а возвращ.знач.нового сокета, если 
 		// обнаружен запрос на создание канала

@@ -1,5 +1,5 @@
 ﻿  pch.cpp
   dllmain.cpp
-D:\Downloads\ConServ\RandServer\RandServer.h(39,16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-     Создается библиотека D:\Downloads\ConServ\Debug\RandServer.lib и объект D:\Downloads\ConServ\Debug\RandServer.exp
-  RandServer.vcxproj -> D:\Downloads\ConServ\Debug\RandServer.dll
+D:\University\6th Sem\РИС\ConServ\RandServer\RandServer.h(39,16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+     Создается библиотека D:\University\6th Sem\РИС\ConServ\Debug\RandServer.lib и объект D:\University\6th Sem\РИС\ConServ\Debug\RandServer.exp
+  RandServer.vcxproj -> D:\University\6th Sem\РИС\ConServ\Debug\RandServer.dll

@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Downloads\ConServ\Debug\ServiceLibrary.dll</FullPath>
+      <FullPath>D:\University\6th Sem\РИС\ConServ\Debug\ServiceLibrary.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\Downloads\ConServ\Debug\ConcurrentServer.exe</FullPath>
+      <FullPath>D:\University\6th Sem\РИС\ConServ\Debug\ConcurrentServer.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

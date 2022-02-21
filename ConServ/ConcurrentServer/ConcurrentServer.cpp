@@ -78,19 +78,15 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	echoServer = LoadLibrary("EchoServer.dll");
 	execEcho = (HANDLE(*)(LPVOID))GetProcAddress(echoServer, "Echo");
-	cout << "Echo server:" << echoServer<<endl;
 
 	randServer = LoadLibrary("RandServer.dll");
 	execRand = (HANDLE(*)(LPVOID))GetProcAddress(randServer, "Rand");
-	cout << "Rand server:" << randServer << endl;
 
 	timeServer = LoadLibrary("TimeServer.dll");
 	execTime = (HANDLE(*)(LPVOID))GetProcAddress(timeServer, "Time");
-	cout << "Time server:" << timeServer << endl;
 
 	syncServer = LoadLibrary("SyncServer.dll");
 	execSync = (HANDLE(*)(LPVOID))GetProcAddress(syncServer, "Sync");
-	cout << "Sync server:" << syncServer << endl;
 
 
 	//st1 = LoadLibrary("Servicelibrary.dll"); 

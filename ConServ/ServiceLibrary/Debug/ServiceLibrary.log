@@ -1,12 +1,18 @@
 ﻿  stdafx.cpp
   dllmain.cpp
-D:\Downloads\ConServ\ServiceLibrary\Global.h(73,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\Downloads\ConServ\ServiceLibrary\Global.h(82,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\Downloads\ConServ\ServiceLibrary\RandServer.h(38,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\Downloads\ConServ\ServiceLibrary\RandServer.h(40,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\Downloads\ConServ\ServiceLibrary\TimeServer.h(38,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\Downloads\ConServ\ServiceLibrary\SyncServer.h(17,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\Downloads\ConServ\ServiceLibrary\SyncServer.h(53,5): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\Global.h(73,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\Global.h(82,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\RandServer.h(38,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\RandServer.h(40,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\TimeServer.h(38,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\SyncServer.h(28,17): warning C4307: "*": переполнение целой константы со знаком
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\SyncServer.h(46,20): warning C4309: =: усечение константного значения
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\SyncServer.h(110,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\SyncServer.h(36,27): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\SyncServer.h(53,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\SyncServer.h(96,6): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\SyncServer.h(111,6): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\ServiceLibrary\SyncServer.h(32,10): warning C4101: wsaData: неиспользованная локальная переменная
   ServiceLibrary.cpp
-     Создается библиотека D:\Downloads\ConServ\Debug\ServiceLibrary.lib и объект D:\Downloads\ConServ\Debug\ServiceLibrary.exp
-  ServiceLibrary.vcxproj -> D:\Downloads\ConServ\Debug\ServiceLibrary.dll
+     Создается библиотека D:\University\6th Sem\РИС\ConServ\Debug\ServiceLibrary.lib и объект D:\University\6th Sem\РИС\ConServ\Debug\ServiceLibrary.exp
+  ServiceLibrary.vcxproj -> D:\University\6th Sem\РИС\ConServ\Debug\ServiceLibrary.dll

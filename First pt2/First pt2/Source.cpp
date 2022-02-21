@@ -44,15 +44,19 @@ int _tmain(int args, _TCHAR* argv[]) {
 		if (WSAStartup(MAKEWORD(2, 0), &wsaData) != 0) throw WSAGetLastError();
 		if ((s = socket(AF_INET, SOCK_DGRAM, NULL)) == INVALID_SOCKET) throw WSAGetLastError();
 		int lenout = 0, lenin = 0, lensockaddr = sizeof(server);
-		if ((lenout = sendto(s, (char*)&out_buf, sizeof(out_buf), NULL, (sockaddr*)&server, sizeof(server))) == SOCKET_ERROR) throw WSAGetLastError();
-		if ((lenin = recvfrom(s, (char*)&in_buf, sizeof(in_buf), NULL, (sockaddr*)&server, &lensockaddr)) == SOCKET_ERROR) throw WSAGetLastError();
-		
-		in_buf.ReferenceTimestamp[0] = ntohl(in_buf.ReferenceTimestamp[0]) - d;
-		in_buf.TransmitTimestamp[0] = ntohl(in_buf.TransmitTimestamp[0]) - d;
-		in_buf.TransmitTimestamp[1] = ntohl(in_buf.TransmitTimestamp[1]);
+		for (int i = 0; i < 10; i++) {
+			Sleep(10000);
+			if ((lenout = sendto(s, (char*)&out_buf, sizeof(out_buf), NULL, (sockaddr*)&server, sizeof(server))) == SOCKET_ERROR) throw WSAGetLastError();
+			if ((lenin = recvfrom(s, (char*)&in_buf, sizeof(in_buf), NULL, (sockaddr*)&server, &lensockaddr)) == SOCKET_ERROR) throw WSAGetLastError();
 
-		int ms = (int)1000.0 * ((double)in_buf.TransmitTimestamp[1]) / (double)0xffffffff;
+			in_buf.ReferenceTimestamp[0] = ntohl(in_buf.ReferenceTimestamp[0]) - d;
+			in_buf.TransmitTimestamp[0] = ntohl(in_buf.TransmitTimestamp[0]) - d;
+			in_buf.TransmitTimestamp[1] = ntohl(in_buf.TransmitTimestamp[1]);
 
+			int ms = (int)1000.0 * ((double)in_buf.TransmitTimestamp[1]) / (double)0xffffffff;
+
+			std::cout << "#" << i << "\tms: " << ms << "\tReferenceTimestamp[0]: " << in_buf.ReferenceTimestamp[0] << "\tTransmitTimestamp[0]: " << in_buf.TransmitTimestamp[0] << std::endl;
+		}
 		if (closesocket(s) == INVALID_SOCKET) throw WSAGetLastError();
 		if (WSACleanup() == SOCKET_ERROR) throw WSAGetLastError();
 	}
