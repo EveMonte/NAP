@@ -1,0 +1,5 @@
+﻿  Source.cpp
+D:\University\6th Sem\РИС\First pt2\First pt2\Source.cpp(23,17): warning C4307: "*": переполнение целой константы со знаком
+D:\University\6th Sem\РИС\First pt2\First pt2\Source.cpp(41,20): warning C4309: =: усечение константного значения
+D:\University\6th Sem\РИС\First pt2\First pt2\Source.cpp(54,10): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  First pt2.vcxproj -> D:\University\6th Sem\РИС\First pt2\x64\Debug\First pt2.exe

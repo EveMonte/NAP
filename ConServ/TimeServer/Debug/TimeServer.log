@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  dllmain.cpp
+D:\Downloads\ConServ\TimeServer\Global.h(14,1): warning C4005: _CRT_SECURE_NO_WARNINGS: изменение макроопределения
+D:\Downloads\ConServ\TimeServer\pch.cpp : message : см. предыдущее определение "_CRT_SECURE_NO_WARNINGS"
+     Создается библиотека D:\Downloads\ConServ\Debug\TimeServer.lib и объект D:\Downloads\ConServ\Debug\TimeServer.exp
+  TimeServer.vcxproj -> D:\Downloads\ConServ\Debug\TimeServer.dll

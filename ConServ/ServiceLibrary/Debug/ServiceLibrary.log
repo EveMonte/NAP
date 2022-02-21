@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+  dllmain.cpp
+D:\Downloads\ConServ\ServiceLibrary\Global.h(73,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Downloads\ConServ\ServiceLibrary\Global.h(82,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Downloads\ConServ\ServiceLibrary\RandServer.h(38,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Downloads\ConServ\ServiceLibrary\RandServer.h(40,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Downloads\ConServ\ServiceLibrary\TimeServer.h(38,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Downloads\ConServ\ServiceLibrary\SyncServer.h(17,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Downloads\ConServ\ServiceLibrary\SyncServer.h(53,5): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ServiceLibrary.cpp
+     Создается библиотека D:\Downloads\ConServ\Debug\ServiceLibrary.lib и объект D:\Downloads\ConServ\Debug\ServiceLibrary.exp
+  ServiceLibrary.vcxproj -> D:\Downloads\ConServ\Debug\ServiceLibrary.dll

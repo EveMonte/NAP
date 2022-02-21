@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "501fc5ea-3d70-4611-a6d9-61f897465bd1": {
+      "ProjectGuid": "501fc5ea-3d70-4611-a6d9-61f897465bd1",
+      "DisplayName": "Client",
+      "ColorIndex": 0
+    },
+    "9ab49295-9de4-4e01-af55-399502ba6c59": {
+      "ProjectGuid": "9ab49295-9de4-4e01-af55-399502ba6c59",
+      "DisplayName": "ConcurrentServer",
+      "ColorIndex": 1
+    },
+    "8ca6fc2c-cee3-4236-ab46-fa1bad6d57a2": {
+      "ProjectGuid": "8ca6fc2c-cee3-4236-ab46-fa1bad6d57a2",
+      "DisplayName": "RemoteConsole",
+      "ColorIndex": 2
+    },
+    "530164f6-4f06-478c-a5c6-03d3584f88ca": {
+      "ProjectGuid": "530164f6-4f06-478c-a5c6-03d3584f88ca",
+      "DisplayName": "EchoServer",
+      "ColorIndex": 3
+    },
+    "fcc3de97-1b2a-49a5-8d57-89772119e4ca": {
+      "ProjectGuid": "fcc3de97-1b2a-49a5-8d57-89772119e4ca",
+      "DisplayName": "SyncServer",
+      "ColorIndex": 4
+    },
+    "daf7c967-479a-4494-9f31-45f397a7120c": {
+      "ProjectGuid": "daf7c967-479a-4494-9f31-45f397a7120c",
+      "DisplayName": "TimeServer",
+      "ColorIndex": 5
+    },
+    "f8e492ef-27cf-43b9-9390-94e938a531cd": {
+      "ProjectGuid": "f8e492ef-27cf-43b9-9390-94e938a531cd",
+      "DisplayName": "ServiceLibrary",
+      "ColorIndex": 6
+    },
+    "c61c49e8-eb8a-442f-ac19-527f8dc0cc8f": {
+      "ProjectGuid": "c61c49e8-eb8a-442f-ac19-527f8dc0cc8f",
+      "DisplayName": "RandServer",
+      "ColorIndex": 7
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "8b576a59-1378-4943-a737-c3e6aead849e": {
+      "ProjectGuid": "8b576a59-1378-4943-a737-c3e6aead849e",
+      "DisplayName": "SyncServer",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}
