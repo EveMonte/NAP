@@ -1,6 +1,4 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets(77,5): warning : Процесс не может получить доступ к файлу "d:\university\6th sem\рис\conserv\remoteconsole\debug\remoteconsole.pch", так как этот файл используется другим процессом.
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets(77,5): warning : Процесс не может получить доступ к файлу "d:\university\6th sem\рис\conserv\remoteconsole\debug\vc143.idb", так как этот файл используется другим процессом.
-  stdafx.cpp
+﻿  stdafx.cpp
   RemoteConsole.cpp
 D:\University\6th Sem\РИС\ConServ\RemoteConsole\RemoteConsole.cpp(10,2): warning C4065: оператор switch содержит метку "default", но не содержит ни одной метки "case"
 D:\University\6th Sem\РИС\ConServ\RemoteConsole\RemoteConsole.cpp(40,12): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

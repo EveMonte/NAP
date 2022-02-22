@@ -108,7 +108,6 @@ bool GetServer(
 		(sockaddr*)all, sizeof(*all))) == SOCKET_ERROR)
 		throw SetErrorMsgText("Sendto:", WSAGetLastError());
 
-
 	if ((libuf = recvfrom(*cC, ibuf, sizeof(ibuf), NULL, (sockaddr*)from, flen)) == SOCKET_ERROR)
 		if (WSAGetLastError() == WSAETIMEDOUT) return false;
 		else throw SetErrorMsgText("Recv:", WSAGetLastError());
@@ -137,7 +136,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	//strcpy(syncServ->cmd, "Sync");
 	clock_t Tc = 10000;
 	sync->curvalue = 0;
+	time_t tt;  time(&tt);
 	int counter = 0;
+	float averageTime = 0;
 	strcpy(sync->cmd, "Sync");
 	try
 	{
@@ -261,17 +262,17 @@ int _tmain(int argc, _TCHAR* argv[])
 			break;
 		case 4:
 			strcpy(Call, "Sync");
+			cout << "Enter Tc: " << endl;
+			cin >> Tc;
 			cout << "Do you want to use NTP? [Y/n]\n";
 			char choice;
 			cin >> choice;
 			if (choice == 'n') {
-				cout << "Enter Tc: " << endl;
-				cin >> Tc;
 				strcpy(iib, "nontp");
 			}
 			else {
 				strcpy(iib, "ntp");
-
+				sync->curvalue = tt;
 			}
 			break;
 		default:
@@ -363,6 +364,9 @@ int _tmain(int argc, _TCHAR* argv[])
 						printf("Полученное сообщение:[%s]\n", obuf);
 					if (isSync) {
 						sync->curvalue += atoi(obuf);
+						time_t temp;
+						time(&temp);
+						averageTime += (sync->curvalue - temp);
 						cout << "Tc: " << Tc << "\tcurvalue " << sync->curvalue << "\tcorrection " << obuf << "\t#" << counter << endl;
 						counter++;
 
@@ -372,6 +376,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				}
 			}
 
+			cout << "Average Cc - OStime = " << averageTime / 10 << endl;
 			clock_t FinishTime = clock();
 			printf("Time: %lf sec.\n", (double)(FinishTime - StartTime) / CLOCKS_PER_SEC);
 

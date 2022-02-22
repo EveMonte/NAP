@@ -1,15 +1,16 @@
 ﻿  stdafx.cpp
   Client.cpp
 D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(96,3): warning C4101: obuf: неиспользованная локальная переменная
-D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(141,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(179,17): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(251,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(255,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(259,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(263,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(270,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(273,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(278,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(302,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(322,8): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(275,22): warning C4244: =: преобразование "time_t" в "int", возможна потеря данных
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(142,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(180,17): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(252,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(256,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(260,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(264,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(271,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(274,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(279,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(303,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\University\6th Sem\РИС\ConServ\Client\Client.cpp(323,8): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
   Client.vcxproj -> D:\University\6th Sem\РИС\ConServ\Debug\Client.exe
